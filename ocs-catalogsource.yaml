@@ -1,0 +1,12 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  labels:
+    ocs-operator-internal: "true"
+  name: ocs-catalogsource
+  namespace: openshift-storage
+spec:
+  displayName: Openshift Container Storage
+  image: docker.io/dinhxuanvu/ocs-operator:4.4-test
+  publisher: Red Hat
+  sourceType: grpc

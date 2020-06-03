@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: lib-bucket-catalog-v2
+  namespace: openshift-storage
+spec:
+  image: quay.io/noobaa/lib-bucket-catalog:v2
+  sourceType: grpc
